@@ -17,6 +17,7 @@ Setup<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(a)rerun the application with 'mvn spring-boot:run' again <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(b)use psql <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(c)use dbeaver (I personnally use that)<br/>
+![alt text](https://github.com/thomascolomba/docker_postgresql_withinVirtualboxUbuntu/docker_postgresql_springboot_dbeaver_firstCustomer.png?raw=true)
 <br/>
 <br/>
 some troubleshoot commands :<br/>
