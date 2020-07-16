@@ -10,7 +10,7 @@ Setup<br/>
 5) within virtualbox/ubuntu, create JAVA_HOME environment variable and add it to the PATH :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- export PATH=$PATH:$JAVA_HOME/bin<br/>
-6) within virtualbox/ubuntu, install docker : I personnaly followed the docker.com tutorial https://docs.docker.com/engine/install/ubuntu/<br/>
+6) within virtualbox/ubuntu, install docker : I personnally followed the docker.com tutorial https://docs.docker.com/engine/install/ubuntu/<br/>
 7) within virtualbox/ubuntu, start a container that runs postgresql : sameersbn/postgresql:12-20200524 (this is not the official image but it does the job), run :sudo docker run --name postgresql -itd --restart always --publish 5432:5432 --volume postgresql:/var/lib/postgresql --env 'PG_TRUST_LOCALNET=true' --env 'PG_PASSWORD=postgres' --env 'DB_USER=thollem' --env 'DB_PASS=thollem' --env 'DB_NAME=mydatabase' sameersbn/postgresql:12-20200524 -c listen_addresses='*'<br/>
 8) within virtualbox/ubuntu, run the spring boot client to store data in that postgresql database : mvn spring-boot:run<br/>
 9) within virtualbox/ubuntu, to see the content in the postgresql database you can : <br/>
